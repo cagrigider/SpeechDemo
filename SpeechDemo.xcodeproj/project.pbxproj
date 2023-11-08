@@ -11,6 +11,16 @@
 		2AD66FE22AFA2AD10083A574 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD66FE12AFA2AD10083A574 /* ContentView.swift */; };
 		2AD66FE42AFA2AD30083A574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD66FE32AFA2AD30083A574 /* Assets.xcassets */; };
 		2AD66FE72AFA2AD30083A574 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD66FE62AFA2AD30083A574 /* Preview Assets.xcassets */; };
+		2AD66FF22AFA490D0083A574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD66FF12AFA490D0083A574 /* AppDelegate.swift */; };
+		2AD66FF42AFA58360083A574 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD66FF32AFA58360083A574 /* MoviesView.swift */; };
+		2AD66FF62AFA5B6F0083A574 /* TVSeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD66FF52AFA5B6F0083A574 /* TVSeriesView.swift */; };
+		2AD66FF82AFA5F190083A574 /* DetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD66FF72AFA5F190083A574 /* DetailItem.swift */; };
+		2AD66FFB2AFA71070083A574 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD66FFA2AFA71070083A574 /* Route.swift */; };
+		2AD66FFD2AFA72790083A574 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD66FFC2AFA72790083A574 /* NavigationRouter.swift */; };
+		2AD66FFF2AFA7CBA0083A574 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD66FFE2AFA7CBA0083A574 /* DetailView.swift */; };
+		2AD670012AFA7F400083A574 /* NavigatableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD670002AFA7F400083A574 /* NavigatableView.swift */; };
+		2AD670042AFB7C3D0083A574 /* OpenScreenIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD670032AFB7C3D0083A574 /* OpenScreenIntent.swift */; };
+		2AD670062AFB7F9A0083A574 /* SpeechAppShortcutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD670052AFB7F9A0083A574 /* SpeechAppShortcutProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,17 @@
 		2AD66FE12AFA2AD10083A574 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2AD66FE32AFA2AD30083A574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AD66FE62AFA2AD30083A574 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AD66FF02AFA46A60083A574 /* SpeechDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpeechDemo.entitlements; sourceTree = "<group>"; };
+		2AD66FF12AFA490D0083A574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2AD66FF32AFA58360083A574 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		2AD66FF52AFA5B6F0083A574 /* TVSeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeriesView.swift; sourceTree = "<group>"; };
+		2AD66FF72AFA5F190083A574 /* DetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItem.swift; sourceTree = "<group>"; };
+		2AD66FFA2AFA71070083A574 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		2AD66FFC2AFA72790083A574 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		2AD66FFE2AFA7CBA0083A574 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		2AD670002AFA7F400083A574 /* NavigatableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatableView.swift; sourceTree = "<group>"; };
+		2AD670032AFB7C3D0083A574 /* OpenScreenIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenScreenIntent.swift; sourceTree = "<group>"; };
+		2AD670052AFB7F9A0083A574 /* SpeechAppShortcutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechAppShortcutProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +72,13 @@
 		2AD66FDE2AFA2AD10083A574 /* SpeechDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2AD66FF02AFA46A60083A574 /* SpeechDemo.entitlements */,
 				2AD66FDF2AFA2AD10083A574 /* SpeechDemoApp.swift */,
-				2AD66FE12AFA2AD10083A574 /* ContentView.swift */,
+				2AD670022AFA852C0083A574 /* Intent */,
+				2AD66FEF2AFA45A20083A574 /* Application */,
+				2AD66FF92AFA5F230083A574 /* Models */,
+				2AD66FED2AFA45810083A574 /* Views */,
+				2AD66FEE2AFA458A0083A574 /* Navigation */,
 				2AD66FE32AFA2AD30083A574 /* Assets.xcassets */,
 				2AD66FE52AFA2AD30083A574 /* Preview Content */,
 			);
@@ -65,6 +91,52 @@
 				2AD66FE62AFA2AD30083A574 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2AD66FED2AFA45810083A574 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2AD66FE12AFA2AD10083A574 /* ContentView.swift */,
+				2AD66FF32AFA58360083A574 /* MoviesView.swift */,
+				2AD66FF52AFA5B6F0083A574 /* TVSeriesView.swift */,
+				2AD66FFE2AFA7CBA0083A574 /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2AD66FEE2AFA458A0083A574 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2AD66FFA2AFA71070083A574 /* Route.swift */,
+				2AD66FFC2AFA72790083A574 /* NavigationRouter.swift */,
+				2AD670002AFA7F400083A574 /* NavigatableView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2AD66FEF2AFA45A20083A574 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2AD66FF12AFA490D0083A574 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2AD66FF92AFA5F230083A574 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2AD66FF72AFA5F190083A574 /* DetailItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2AD670022AFA852C0083A574 /* Intent */ = {
+			isa = PBXGroup;
+			children = (
+				2AD670032AFB7C3D0083A574 /* OpenScreenIntent.swift */,
+				2AD670052AFB7F9A0083A574 /* SpeechAppShortcutProvider.swift */,
+			);
+			path = Intent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +209,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD66FF22AFA490D0083A574 /* AppDelegate.swift in Sources */,
+				2AD66FFF2AFA7CBA0083A574 /* DetailView.swift in Sources */,
+				2AD66FF42AFA58360083A574 /* MoviesView.swift in Sources */,
+				2AD66FFD2AFA72790083A574 /* NavigationRouter.swift in Sources */,
+				2AD670062AFB7F9A0083A574 /* SpeechAppShortcutProvider.swift in Sources */,
 				2AD66FE22AFA2AD10083A574 /* ContentView.swift in Sources */,
+				2AD66FF82AFA5F190083A574 /* DetailItem.swift in Sources */,
+				2AD670042AFB7C3D0083A574 /* OpenScreenIntent.swift in Sources */,
 				2AD66FE02AFA2AD10083A574 /* SpeechDemoApp.swift in Sources */,
+				2AD66FFB2AFA71070083A574 /* Route.swift in Sources */,
+				2AD66FF62AFA5B6F0083A574 /* TVSeriesView.swift in Sources */,
+				2AD670012AFA7F400083A574 /* NavigatableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +351,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpeechDemo/SpeechDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpeechDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 9H69VPCLHJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSiriUsageDescription = "This app uses Siri to launch and navigate.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,12 +382,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpeechDemo/SpeechDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpeechDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 9H69VPCLHJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSiriUsageDescription = "This app uses Siri to launch and navigate.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
