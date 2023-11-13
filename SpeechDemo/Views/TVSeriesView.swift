@@ -17,6 +17,7 @@ struct TVSeriesView: View {
             Text(movie.name)
         }
         .navigatable(route: $router.tvSeriesRoutes)
+        .speakable()
         .onAppear {
             self.checkForDetail()
         }

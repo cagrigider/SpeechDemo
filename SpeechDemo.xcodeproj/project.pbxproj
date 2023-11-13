@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1793EF2AFE55E40073537F /* SpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1793EE2AFE55E40073537F /* SpeechView.swift */; };
+		2A1793F12AFE5A3B0073537F /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1793F02AFE5A3B0073537F /* SpeechRecognizer.swift */; };
+		2A1793F32B01F8020073537F /* Speakable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1793F22B01F8020073537F /* Speakable.swift */; };
 		2AD66FE02AFA2AD10083A574 /* SpeechDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD66FDF2AFA2AD10083A574 /* SpeechDemoApp.swift */; };
 		2AD66FE22AFA2AD10083A574 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD66FE12AFA2AD10083A574 /* ContentView.swift */; };
 		2AD66FE42AFA2AD30083A574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD66FE32AFA2AD30083A574 /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A1793EE2AFE55E40073537F /* SpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechView.swift; sourceTree = "<group>"; };
+		2A1793F02AFE5A3B0073537F /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		2A1793F22B01F8020073537F /* Speakable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speakable.swift; sourceTree = "<group>"; };
 		2AD66FDC2AFA2AD10083A574 /* SpeechDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD66FDF2AFA2AD10083A574 /* SpeechDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechDemoApp.swift; sourceTree = "<group>"; };
 		2AD66FE12AFA2AD10083A574 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1793ED2AFE55D90073537F /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				2A1793EE2AFE55E40073537F /* SpeechView.swift */,
+				2A1793F02AFE5A3B0073537F /* SpeechRecognizer.swift */,
+			);
+			path = Speech;
+			sourceTree = "<group>";
+		};
 		2AD66FD32AFA2AD10083A574 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +114,7 @@
 				2AD66FE12AFA2AD10083A574 /* ContentView.swift */,
 				2AD66FF32AFA58360083A574 /* MoviesView.swift */,
 				2AD66FF52AFA5B6F0083A574 /* TVSeriesView.swift */,
+				2A1793ED2AFE55D90073537F /* Speech */,
 				2AD66FFE2AFA7CBA0083A574 /* DetailView.swift */,
 			);
 			path = Views;
@@ -110,6 +126,7 @@
 				2AD66FFA2AFA71070083A574 /* Route.swift */,
 				2AD66FFC2AFA72790083A574 /* NavigationRouter.swift */,
 				2AD670002AFA7F400083A574 /* NavigatableView.swift */,
+				2A1793F22B01F8020073537F /* Speakable.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -211,10 +228,13 @@
 			files = (
 				2AD66FF22AFA490D0083A574 /* AppDelegate.swift in Sources */,
 				2AD66FFF2AFA7CBA0083A574 /* DetailView.swift in Sources */,
+				2A1793F32B01F8020073537F /* Speakable.swift in Sources */,
 				2AD66FF42AFA58360083A574 /* MoviesView.swift in Sources */,
 				2AD66FFD2AFA72790083A574 /* NavigationRouter.swift in Sources */,
+				2A1793EF2AFE55E40073537F /* SpeechView.swift in Sources */,
 				2AD670062AFB7F9A0083A574 /* SpeechAppShortcutProvider.swift in Sources */,
 				2AD66FE22AFA2AD10083A574 /* ContentView.swift in Sources */,
+				2A1793F12AFE5A3B0073537F /* SpeechRecognizer.swift in Sources */,
 				2AD66FF82AFA5F190083A574 /* DetailItem.swift in Sources */,
 				2AD670042AFB7C3D0083A574 /* OpenScreenIntent.swift in Sources */,
 				2AD66FE02AFA2AD10083A574 /* SpeechDemoApp.swift in Sources */,
@@ -358,7 +378,9 @@
 				DEVELOPMENT_TEAM = 9H69VPCLHJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses Speech Recognition to navigate with your voice.";
 				INFOPLIST_KEY_NSSiriUsageDescription = "This app uses Siri to launch and navigate.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses Speech Recognition to navigate with your voice.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -389,7 +411,9 @@
 				DEVELOPMENT_TEAM = 9H69VPCLHJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses Speech Recognition to navigate with your voice.";
 				INFOPLIST_KEY_NSSiriUsageDescription = "This app uses Siri to launch and navigate.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses Speech Recognition to navigate with your voice.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -17,6 +17,7 @@ struct MoviesView: View {
             Text(movie.name)
         }
         .navigatable(route: $router.moviesRoutes)
+        .speakable()
         .onAppear {
             self.checkForDetail()
         }

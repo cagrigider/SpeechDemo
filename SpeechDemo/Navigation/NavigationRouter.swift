@@ -12,6 +12,7 @@ final class NavigationRouter: ObservableObject {
     @Published var selectedTab: Tab = .movies
     @Published var moviesRoutes = NavigationPath()
     @Published var tvSeriesRoutes = NavigationPath()
+    @Published var speechPresented = false
 
     @Published var detailItemName: String?
 

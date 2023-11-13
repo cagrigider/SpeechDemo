@@ -22,6 +22,16 @@ enum Tab: String, AppEnum {
 
 enum Route {
     case detail(item: DetailItem)
+    case asdsad
+
+    var desc: String {
+        switch self {
+        case .detail:
+            return "Detail"
+        case .asdsad:
+            return ""
+        }
+    }
 }
 
 extension Route: View {
@@ -29,6 +39,8 @@ extension Route: View {
         switch self {
         case .detail(let item):
             DetailView(item: item)
+        case .asdsad:
+            EmptyView()
         }
     }
 }
@@ -42,6 +54,10 @@ extension Route: Hashable {
         switch (lhs, rhs) {
         case (.detail(let lhsValue), .detail(let rhsValue)):
             return lhsValue.id == rhsValue.id
+        case (.asdsad, .asdsad):
+            return true
+        default:
+            return false
         }
     }
 }
